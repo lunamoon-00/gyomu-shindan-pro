@@ -1,0 +1,334 @@
+/* 業務効率化診断 Pro - 信用感のあるデザイン */
+
+.app {
+  min-height: 100vh;
+  background: #f5f7fa;
+  color: #2c3e50;
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e8ecf1;
+  padding: 1.75rem 1rem;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a365d;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: #5a6c7d;
+  line-height: 1.5;
+}
+
+.main {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 1.75rem 1rem 2.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem 1.5rem 1.75rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e8ecf1;
+}
+
+.card h2 {
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a365d;
+  border-bottom: 2px solid #2b6cb0;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.input-card input[type="number"] {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: #fff;
+  color: #2c3e50;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-card input[type="number"]:focus {
+  outline: none;
+  border-color: #2b6cb0;
+  box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.12);
+}
+
+.form-group {
+  margin-bottom: 1.15rem;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: #2b6cb0;
+  cursor: pointer;
+}
+
+.result-card .result-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-label {
+  font-size: 0.9rem;
+  color: #5a6c7d;
+}
+
+.result-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a365d;
+}
+
+.result-value.highlight {
+  color: #2b6cb0;
+  font-size: 1.2rem;
+}
+
+.ai-card .ai-comment {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #4a5568;
+}
+
+.contact-card .contact-text {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: #5a6c7d;
+  line-height: 1.55;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.15rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  background: #fff;
+  color: #2c3e50;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #a0aec0;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #2b6cb0;
+  box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.12);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form .mail-button {
+  margin-top: 0.25rem;
+}
+
+.contact-success {
+  padding: 1rem 1.25rem;
+  background: #f0fff4;
+  border: 1px solid #9ae6b4;
+  border-radius: 8px;
+  color: #276749;
+}
+
+.contact-success p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.contact-error {
+  margin: 0 0 0.5rem;
+  font-size: 0.875rem;
+  color: #c53030;
+}
+
+.mail-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #2b6cb0;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.mail-button:hover {
+  background: #2c5282;
+  box-shadow: 0 2px 6px rgba(43, 108, 176, 0.3);
+}
+
+.mail-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mail-button-primary {
+  background: #2b6cb0;
+  color: #fff;
+}
+
+.mail-button-primary:hover {
+  background: #2c5282;
+}
+
+.mail-button-secondary {
+  background: #fff;
+  color: #2b6cb0;
+  border: 2px solid #2b6cb0;
+}
+
+.mail-button-secondary:hover {
+  background: #ebf8ff;
+  color: #2c5282;
+  border-color: #2c5282;
+}
+
+.mail-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.25);
+}
+
+.contact-fallback {
+  margin: 1rem 0 0.5rem;
+  font-size: 0.8rem;
+  color: #718096;
+  line-height: 1.45;
+}
+
+.contact-email-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-email {
+  font-size: 0.9rem;
+  background: #edf2f7;
+  padding: 0.45rem 0.65rem;
+  border-radius: 6px;
+  word-break: break-all;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+}
+
+.copy-button {
+  padding: 0.45rem 0.85rem;
+  font-size: 0.85rem;
+  background: #edf2f7;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.copy-button:hover {
+  background: #e2e8f0;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.25rem 1rem;
+  font-size: 0.8rem;
+  color: #718096;
+  border-top: 1px solid #e8ecf1;
+  background: #fff;
+  line-height: 1.5;
+}
+
+@media (min-width: 480px) {
+  .header h1 {
+    font-size: 1.65rem;
+  }
+
+  .main {
+    padding: 2rem 1rem 2.5rem;
+  }
+
+  .card {
+    padding: 1.75rem 1.75rem 2rem;
+  }
+}
