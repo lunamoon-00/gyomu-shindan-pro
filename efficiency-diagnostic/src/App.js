@@ -192,6 +192,7 @@ function App() {
 
       <footer className="footer">
         <p>業務効率化診断 Pro — 事務時間の約30%をAIで削減可能とした試算です</p>
+        <p className="privacy-note">当サイトではサービス向上のためGoogle Analyticsを使用しています。データは匿名で収集され、個人を特定する情報は含まれません。</p>
       </footer>
       <iframe name="formspree-hidden-frame" title="formspree" style={{ display: 'none' }} />
     </div>

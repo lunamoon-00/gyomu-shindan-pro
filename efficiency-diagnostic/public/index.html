@@ -1,14 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="従業員数・時給・事務時間からAI削減可能時間と金額を試算。業務効率化診断Proで、AIによるコスト削減効果をすぐに確認できます。"
     />
+    <!-- OGP -->
+    <meta property="og:title" content="業務効率化診断 Pro" />
+    <meta property="og:description" content="従業員数・時給・事務時間を入力するだけで、AIによる業務削減時間とコスト削減額を即座に試算。無料でお試しいただけます。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lunamoon-00.github.io/gyomu-shindan-pro/" />
+    <meta property="og:locale" content="ja_JP" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="業務効率化診断 Pro" />
+    <meta name="twitter:description" content="従業員数・時給・事務時間を入力するだけで、AIによる業務削減時間とコスト削減額を即座に試算。" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -24,7 +37,15 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>業務効率化診断 Pro</title>
+    <!-- Google Analytics 4: 下の G-RDDZGDYVPV をあなたの測定IDに置き換えてください -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RDDZGDYVPV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RDDZGDYVPV');
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
